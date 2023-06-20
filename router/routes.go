@@ -16,9 +16,9 @@ func InitializeRoutes(router *gin.Engine) {
 	handler.InitializeHandler()
 	// programmatically set swagger info
 	docs.SwaggerInfo.Title = "Swagger Example API"
-	docs.SwaggerInfo.Description = "This is a sample server EstudoGo server."
-	docs.SwaggerInfo.Version = "2.0"
-	docs.SwaggerInfo.Host = "estudoGo.swagger.io"
+	docs.SwaggerInfo.Description = "This is a sample server BackGo server."
+	docs.SwaggerInfo.Version = "1.0"
+	docs.SwaggerInfo.Host = "BackGo.swagger.io"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	v1 := router.Group(basePath)
 	{

@@ -35,7 +35,7 @@ func ShowOpeningHandler(c *gin.Context) {
 		sendError(c, http.StatusInternalServerError, "error connecting to the database")
 		return
 	}
-	// Se db for um ponteiro nulo, o erro ocorrerá ao chamar db.Create(&opening)
+	// Se db for um ponteiro nulo, o erro ocorrerá ao chamar db
 	if db == nil {
 		logger.Err("db object is nil")
 		sendError(c, http.StatusInternalServerError, "database object is nil")
