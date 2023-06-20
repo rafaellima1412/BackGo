@@ -9,6 +9,19 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//	@BasePath		/api/v1
+
+//	@Summary		Show Opening
+//	@Description	Show Opening job opening
+//	@Tags			Openings
+//	@Accept			json
+//	@Produce		json
+//	@Param			id query string			true	"Opening indetification"
+//	@Success		200		{object}	ShowOpeningReponse
+//	@Failure		400		{object}	ErrorReponse
+//	@Failure		404		{object}	ErrorReponse
+//	@Router			/opening [get]
+
 func ShowOpeningHandler(c *gin.Context) {
 	id := c.Query("id")
 	if id == "" {
