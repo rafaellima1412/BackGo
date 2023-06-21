@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//	@BasePath		/api/v1
+//	@BasePath	/api/v1
 
 //	@Summary		Create Opening
 //	@Description	Create  a new Opening job

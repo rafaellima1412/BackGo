@@ -9,12 +9,13 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
-// @contact.name   API Support
-// @contact.url    http://www.swagger.io/support
-// @contact.email  support@swagger.io
+//	@contact.name	API Support
+//	@contact.url	http://www.swagger.io/support
+//	@contact.email	support@swagger.io
 
-// @license.name  Apache 2.0
-// @license.url   http://www.apache.org/licenses/LICENSE-2.0.html
+//	@license.name	Apache 2.0
+//	@license.url	http://www.apache.org/licenses/LICENSE-2.0.html
+
 func InitializeRoutes(router *gin.Engine) {
 
 	basePath := "/api/v1"
@@ -28,11 +29,11 @@ func InitializeRoutes(router *gin.Engine) {
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	v1 := router.Group(basePath)
 	{
-		v1.GET("/opening", handler.ShowOpeningHandler)
 		v1.POST("/opening", handler.CreateOpeningHandler)
 		v1.DELETE("/opening", handler.DeleteOpeningHandler)
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		v1.GET("/openings", handler.ListOpeningHandler)
+		v1.GET("/opening", handler.ShowOpeningHandler)
 	}
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 }

@@ -8,15 +8,15 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//	@BasePath		/api/v1
+//	@BasePath	/api/v1
 
 //	@Summary		List Openings
 //	@Description	List Openings jobs opening
-//	@Tags			Openings
+//	@Tags			Opening
 //	@Accept			json
 //	@Produce		json
-//	@Success		200		{object}	ListOpeningsReponse
-//	@Failure		500		{object}	ErrorReponse
+//	@Success		200	{object}	ListOpeningsReponse
+//	@Failure		500	{object}	ErrorReponse
 //	@Router			/openings [get]
 
 func ListOpeningHandler(c *gin.Context) {

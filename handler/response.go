@@ -29,16 +29,6 @@ type ErrorReponse struct {
 	ErrorCode string `json: "errorCode"`
 }
 
-type CreateOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
-}
-
-type DeleteOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
-}
-
 type ShowOpeningReponse struct {
 	Message string                  `json: "message"`
 	Data    schemas.OpeningResponse `json: "data"`
@@ -47,6 +37,15 @@ type ShowOpeningReponse struct {
 type ListOpeningsReponse struct {
 	Message string                    `json: "message"`
 	Data    []schemas.OpeningResponse `json: "data"`
+}
+type CreateOpeningReponse struct {
+	Message string                  `json: "message"`
+	Data    schemas.OpeningResponse `json: "data"`
+}
+
+type DeleteOpeningReponse struct {
+	Message string                  `json: "message"`
+	Data    schemas.OpeningResponse `json: "data"`
 }
 
 type UpdateOpeningReponse struct {

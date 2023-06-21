@@ -8,14 +8,14 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//	@BasePath		/api/v1
+//	@BasePath	/api/v1
 
 //	@Summary		Update Opening
 //	@Description	Update Opening job
 //	@Tags			Openings
 //	@Accept			json
 //	@Produce		json
-//	@Param			id query string			true	"Opening indetification"
+//	@Param			id		query		string					true	"Opening indetification"
 //	@Param			opening	body		UpdateOpeningRequest	true	"Opening data to update"
 //	@Success		200		{object}	UpdateOpeningReponse
 //	@Failure		400		{object}	ErrorReponse
