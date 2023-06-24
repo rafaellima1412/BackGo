@@ -25,30 +25,30 @@ func sendSuccess(c *gin.Context, op string, data interface{}) {
 }
 
 type ErrorReponse struct {
-	Message   string `json: "message"`
-	ErrorCode string `json: "errorCode"`
+	Message   string `json:"message"`
+	ErrorCode string `json:"errorCode"`
 }
 
 type ShowOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
+	Message string                  `json:"message"`
+	Data    schemas.OpeningResponse `json:"data"`
 }
 
 type ListOpeningsReponse struct {
-	Message string                    `json: "message"`
-	Data    []schemas.OpeningResponse `json: "data"`
+	Message string                    `json:"message"`
+	Data    []schemas.OpeningResponse `json:"data"`
 }
 type CreateOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
+	Message string                  `json:"message"`
+	Data    schemas.OpeningResponse `json:"data"`
 }
 
 type DeleteOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
+	Message string                  `json:"message"`
+	Data    schemas.OpeningResponse `json:"data"`
 }
 
 type UpdateOpeningReponse struct {
-	Message string                  `json: "message"`
-	Data    schemas.OpeningResponse `json: "data"`
+	Message string                  `json:"message"`
+	Data    schemas.OpeningResponse `json:"data,"`
 }
