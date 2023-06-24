@@ -256,7 +256,7 @@
                 "createdAt": {
                     "type": "string"
                 },
-                "deletedAt": {
+                "deleteAt": {
                     "type": "string"
                 },
                 "id": {
@@ -277,7 +277,7 @@
                 "salary": {
                     "type": "integer"
                 },
-                "updatedAt": {
+                "updateAt": {
                     "type": "string"
                 }
             }

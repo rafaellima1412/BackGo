@@ -63,7 +63,7 @@ definitions:
         type: string
       createdAt:
         type: string
-      deletedAt:
+      deleteAt:
         type: string
       id:
         type: integer
@@ -77,7 +77,7 @@ definitions:
         type: string
       salary:
         type: integer
-      updatedAt:
+      updateAt:
         type: string
     type: object
 info:

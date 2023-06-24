@@ -268,7 +268,7 @@ const docTemplate = `{
                 "createdAt": {
                     "type": "string"
                 },
-                "deletedAt": {
+                "deleteAt": {
                     "type": "string"
                 },
                 "id": {
@@ -289,7 +289,7 @@ const docTemplate = `{
                 "salary": {
                     "type": "integer"
                 },
-                "updatedAt": {
+                "updateAt": {
                     "type": "string"
                 }
             }
